@@ -1,7 +1,7 @@
 ---
 layout: page
-title: About
+title: HPXuan
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+其实当站在人生岔路口的时候，每个人都会做出最终抉择。无论选择哪条路，多年之后回头再看，都会觉得后悔。因为没有人知道选择另一条路会有什么结果，也不可能知道。
