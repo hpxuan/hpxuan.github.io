@@ -8,13 +8,12 @@
 # Site settings
 title: hpxuan
 email: hpx12138@126.com
-description:  Write an awesome description for your new site here. You can edit this
-              line in _config.yml. It will appear in your document head meta (for
-              Google search results) and in your feed.xml site description.
+description: 规则，分天道规则和人道规则。清泉自高往低而流，日月星辰东升西落，
+                此乃天道规则，非人力所不能及也。吾辈亦不奢望。
 baseurl: "/hpxuan.github.io" # the subpath of your site, e.g. /blog
 url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+twitter_username: hpxuan
+github_username:  hpxuan
 
 # Build settings
 markdown: kramdown
