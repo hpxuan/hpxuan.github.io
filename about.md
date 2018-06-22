@@ -3,5 +3,5 @@ layout: page
 title: HPXuan
 permalink: /about/
 ---
-<div><a href="hpxuan.github.io/catalog.html" class="btn">文章目录</a></div>
+[<div class="btn">文章目录</div>](/catalog.html/)
 其实当站在人生岔路口的时候，每个人都会做出最终抉择。无论选择哪条路，多年之后回头再看，都会觉得后悔。因为没有人知道选择另一条路会有什么结果，也不可能知道。
