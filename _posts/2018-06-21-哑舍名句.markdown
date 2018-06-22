@@ -15,5 +15,5 @@ categories: jekyll update
 小和尚自问，人生到底有多长？ 
 
 小和尚自答，你我之间。
-怎么个链接法{{ site.baseurl }}{% post_url /subdir/2010-07-21-name-of-post %}
+{{ site.baseurl }}{% _posts/pier/subdir/2 %}
 
