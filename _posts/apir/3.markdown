@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "这是我修改的第一个名字!"
+title:  "apir第二个!"
 date:   2018-07-10 11:49:45 +0200
-categories: jekyll update
+categories: apir
 ---
 这是我修改的第一个名字，不知道能不能修改成功!
 
