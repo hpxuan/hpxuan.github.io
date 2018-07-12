@@ -1,7 +1,7 @@
 ---
 layout: page
 title: HPXuan
-permalink: /about/.
+permalink:/about/
 ---
 
 >:其实当站在人生岔路口的时候，每个人都会做出最终抉择。
