@@ -25,19 +25,19 @@ Oracle数据库管理系统，是Oracle公司的核心产品
 
 #### Oracle服务  
 1. 1.OracleOraDb11g_homeTNSTistener（**必须启动**）  
-    > 监听服务，客户端必须先链接驻留在数据库服务器上的监听服务，才能连接数据库  
-2. 2.-OracleServiceSID（**必须启动**）  
-    > 为SID（系统标识符）数据库实例创建的  
-3. 3. -OraclejobSchedulerSID  
-    > 任务调度服务，oracle自动管理功能  
-4. 4.-OracleDBConSQLeSID  
-    > 负责在平台上启动oracle企业管理器  
-## Sql语句管理数据库  
-#### 数据定义语言（DDL）  
-1.    > 创建、修改和删除数据库对象，如CREATE TABLE、ALTER TABLE、DROP TABLE等。DDL语句可以自动提交事务  
-#### 数据操控语言（DML）  
-2.    > 用于操纵数据，包含INSERT。URDATE、DELETE。SELECT等  
-#### 数据控制语言（DCL）  
-3.    > 用于执行授予权限和撤销权限的操作，包括GRANT（授予权限）、REVOKE（撤销权限），可自动提交事务  
-#### 事务控制语言（TCL）  
-4.    > 维护数据的一致性，包括COMMIT（提交事务）、ROLLBACK（回滚事务）、SAVEPOINT（设置保存点）  
+ > 监听服务，客户端必须先链接驻留在数据库服务器上的监听服务，才能连接数据库  
+2. 2.OracleServiceSID（**必须启动**）  
+> 为SID（系统标识符）数据库实例创建的  
+3. 3.OraclejobSchedulerSID  
+>任务调度服务，oracle自动管理功能  
+4. 4.OracleDBConSQLeSID  
+ >负责在平台上启动oracle企业管理器  
+#### Sql语句管理数据库  
+* 数据定义语言（DDL）  
+    > 创建、修改和删除数据库对象，如CREATE TABLE、ALTER TABLE、DROP TABLE等。DDL语句可以自动提交事务  
+* 数据操控语言（DML）  
+    > 用于操纵数据，包含INSERT。URDATE、DELETE。SELECT等  
+* 数据控制语言（DCL）  
+    > 用于执行授予权限和撤销权限的操作，包括GRANT（授予权限）、REVOKE（撤销权限），可自动提交事务  
+* 事务控制语言（TCL）  
+    > 维护数据的一致性，包括COMMIT（提交事务）、ROLLBACK（回滚事务）、SAVEPOINT（设置保存点）  
