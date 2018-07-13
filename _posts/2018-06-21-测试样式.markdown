@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "哑舍句子"
+title:  "测试样式"
 date:   2018-05-15 11:49:45 +0200
-categories: jekyll update
+categories: hpxuan
 ---
 
 标题，#加一个空格，直到六级标题######这样
@@ -11,11 +11,11 @@ categories: jekyll update
 ### 三级标题  
 
 * 字体  
-> 加粗是用/**包起来  
+> 加粗是用/**/包起来  
 **加粗**
 
 * 斜体  
-> 斜体是用一个/*包起来  
+> 斜体是用一个/*/包起来  
 *斜体*
 
 * 斜体加粗  
@@ -23,5 +23,5 @@ categories: jekyll update
 ***斜体加粗***
 
 * 删除线  
-删除线是两个/~~  
+删除线是两个/~~/  
 ~~删除线~~
