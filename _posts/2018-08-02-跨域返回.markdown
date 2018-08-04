@@ -30,16 +30,16 @@ categories: hpxuan
 #### ajax    
 > $.ajax({  
 >> url : urla,  
->> //用什么方式请求我想网站是有要求的
+>> //用什么方式请求我想网站是有要求的  
 >> type: 'GET',  
 >> dataType: 'JSONP',  
->> //设置这个纯粹是玩
+>> //设置这个纯粹是玩  
 >> async: false,  
 >> success: function(qqq){  
 >>> //js对象转换json字符串  
 >>> var www=JSON.stringify(qqq);  
 >>> //这个是准换为js对象,这两个根据自己情况用  
->>> var www=JSON.parse(qqq);
+>>> var www=JSON.parse(qqq);  
 >>> //js的函数，可计算某个字符串  
 >>> eval('www.'+"你想去的参数名称");  
 >>}  
