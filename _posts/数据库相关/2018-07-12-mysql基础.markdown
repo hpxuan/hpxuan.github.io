@@ -1,9 +1,10 @@
 ---
 layout: post
-title:  "一"
+title:  "二"
 date:   2018-07-12 11:49:45 +0200
 categories: hpxuan
 ---
+
 insert into 表（列） select 列 from 表  
 *把表中一列数据插入到表中*  
 *insert语句可多次插入，只要用UNION语句把添加的连接起来
@@ -20,7 +21,7 @@ LIMIT (int)
 *order by排序*
 
 ####函数  
->#####字符串函数  
+> #####字符串函数  
 0. *REPLACE* REPLACE(字符，字符a，字符b) 吧字符中的a全部换成b
 1. *CONCAT函数* COUCAT("","") MYSQL中拼接字符串  
 2. *判断为空，IS NULL*  
