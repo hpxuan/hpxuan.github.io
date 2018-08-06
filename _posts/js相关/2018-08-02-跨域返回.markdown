@@ -9,6 +9,7 @@ categories: hpxuan
  ---  
 #### 雅虎查询  
 ##### 下边是代码，远程获取（好像有BUG，感觉这个东西有延迟）  
+'''
 >  $.ajax({  
 >> url: 'http://query.yahooapis.com/v1/public/yql',  
 >> dataType:"jsonp",  
@@ -20,6 +21,7 @@ categories: hpxuan
 >> },  
 >> success: function (d) {  
 >> });  
+'''
 ##### 我是获取微信api返回值，就是感觉这个有延迟，也没深入研究  
  ---  
 #### 重点戏来了 *AJAX*  
@@ -27,7 +29,8 @@ categories: hpxuan
 ##### 里面有个*async*属性，默认是true，即为异步方式  
 ##### 会继续执行ajax后边的东西，知道返回数据，触发seccess或者异常触发error，两个线程  
 ##### 设置成false，变为同步，没返回值之前不执行其他操作  
-#### ajax    
+#### ajax  
+'''
 > $.ajax({  
 >> url : urla,  
 >> //用什么方式请求我想网站是有要求的  
@@ -43,4 +46,5 @@ categories: hpxuan
 >>> //js的函数，可计算某个字符串  
 >>> eval('www.'+"你想去的参数名称");  
 >>}  
+'''
 #### 最后，希望别拖欠我工资，希望爱情公寓不要失望

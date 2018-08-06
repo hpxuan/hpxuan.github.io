@@ -1,0 +1,75 @@
+---
+layout: post
+title:  "一"
+date:   2018-07-12 11:49:45 +0200
+categories: hpxuan
+---
+insert into 表（列） select 列 from 表  
+*把表中一列数据插入到表中*  
+*insert语句可多次插入，只要用UNION语句把添加的连接起来
+
+create table 新表表名 as select 列，列 from 表  
+*把表中信息插入新表中*
+
+truncate table  
+*删除表中数据但是不删除表结构*
+
+LIMIT (int)  
+*查询显示函数，最后加LIMIT 行数*
+
+*order by排序*
+
+####函数  
+>#####字符串函数  
+0. *REPLACE* REPLACE(字符，字符a，字符b) 吧字符中的a全部换成b
+1. *CONCAT函数* COUCAT("","") MYSQL中拼接字符串  
+2. *判断为空，IS NULL*  
+3. *POSITION* POSITION("","被查找的字符串") 用来寻找指定字符在字符串的位置  
+4. *LENGTH* 返回字符串长度  
+5. *UPPER* 字符串转坏为大写  
+6. *LIRIM* 清楚左边空格  
+7. *RTRIM* 清楚右边空格  
+8. *RIGHT* RIGHT(字符串，int) 从字符串右边返回int数目的字符  
+9. *SUBSTRING* SUBSTRING(字符串，inta，intb) 从字符串a的位置开始取出b数目的字符
+
+> #####时间函数  
+1. *CURDATE* 取得系统当前时间 select curdate();  
+2. *NOW* 取得当前的时间和日期 select NOW() 日期加时间  
+3. *DATE_ADD* 将数值增加到指定的日起部分，后的日期  
+4. DATE_ADD('2015-08-17',INTERVAL 6 MONTH) 返回2016-02  
+5. *DATEDIFF* 两个日期之间间隔的天数  
+6. *MONTH* 取得日期的月份
+
+> #####数字函数  
+1. *RAND* 从0到1随机取float  
+2. *ABS* 取数值表达式的整数  
+3. *CEILING* 向上取整数  
+4. *FLOOR* 向下取整数  
+5. *ROUND* 四舍五入  
+6. *SING* 整数返回1，负数返回-1,0返回0  
+7. SUM() 求所有数值的和，只适用于数字  
+8. AVG() 求平均值，空值忽略  
+9. MAX() 最大值 忽略空值 可以用于数字型，字符型，时间型  
+10. MIN() 最小值 忽略空值 可以用于数字型，字符型，时间型  
+11. COUNT() 计数，包含空值  
+
+
+> #####系统函数  
+1. *CAST或CONVERT* 转换数据类型 CAST(字符串 as 数据类型)，CONVERT(字符串，数据类型)
+2. *USER* 返回当前用户的名字 select user（）  
+3. *DATABASE* 返回当前数据库名 同上
+
+#####通配符   
+通配符|解释   
+-|-   
+- |一个字符   
+% |任意长度的字符串   
+[] |范围内一个字符   
+[^] |不在范围内的   
+
+#####模糊查询  
+*LIKE* 用于字符串  
+*BETWEEN* 查找两个int，int and int  
+*IN* 查询的值是指定的某些值之一  
+> select name AS 名字 from 表 where address IN('a','b')
+
