@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "二"
+title:  "MySql基础"
 date:   2018-07-12 11:49:45 +0200
 categories: hpxuan
 ---
@@ -75,3 +75,32 @@ LIMIT (int)
 **IN** 查询的值是指定的某些值之一  
 > select name AS 名字 from 表 where address IN('a','b')
 
+##### 分组查询  
+GROUP BY  
+HAVING 在分组的前提上，再进行筛选  
+INNER JOIN...ON 链接两个表  
+外链接  
+左外链接查询 LEFT JOIN或者LEFT OUTER JOIN...ON  
+左边表的查询会全部显示，右边有的显示，没得显示null  
+右链接查询 RIGHT JOIN..ON或RIGHT OUTER JOIN...ON  
+右边表查询全部显示，左边有的显示，没得显示null  
+##### 视图  
+视图是一个虚拟表，操作简单，显示方便  
+把常用的查询设置成视图，免的重复操作  
+视图只显示需要的几个表的列，不显示具体表和表机构，安全性高  
+##### 索引  
+数据多的情况下增加查询速度的，标识列，主键就是一种索引  
+查询条件包含索引项，会先筛选索引项
+
+##### 储存过程  
+就想函数一样，可以判断也可以只查询，可以调用  
+判断语句有IF,CASE,REPEAT，WHILE 
+case，给一个值判断==执行操作  
+REPEAT 每循环一次就判断  
+WHILE 先判断再循环  
+LOOP 循环到结束
+ITERATE 再次循环  
+
+##### 触发器  
+增删改的时候可以设置触发器  
+触发器可以拦截你的操作并作出指定回应或命令
