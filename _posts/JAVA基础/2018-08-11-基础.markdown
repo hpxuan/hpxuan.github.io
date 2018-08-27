@@ -9,16 +9,18 @@ categories: hpxuan
 > 没有分清楚过，丢人丢人  
 > i++ 先运算再赋值，a=i++,先运算a=i,然后i=i+1  
 > ++i 先赋值再运算，a=++i,先运算i=i+1,然后a=i  
+
 ##### 随机数  
- **Math.random(),随机取0-1的double数字**  
+**Math.random(),随机取0-1的double数字**  
 ' **System.out.println(Math.random());** '  
 >> 第一次结果0.13234486094483777  
 >> 第二次结果0.3352224127641926  
+
 ##### 数组排序  
 - Arrays.binarySearch()在数组中查找指定元素  
 - Arrays.sort(数组名); 升序排序  
-##### String常用方法
 
+##### String常用方法  
 **comepareToIgnoreCase()**方法  
 按照字典顺序比较两个字符串，忽略大小写  
 ' **String1.comepareToIgnoreCase(string2);** '  
