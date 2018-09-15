@@ -5,6 +5,15 @@ date:   2018-07-12 11:49:45 +0200
 categories: hpxuan
 ---
 
+##### **order by排序** 
+##### **group by 刷选**
+##### **distinct 不差重复语句**
+
+---
+
+##### select distinct 查询字段名
+> distinct 不差重复语句
+
 ---
 
 insert into 表（列） select 列 from 表  
@@ -27,8 +36,6 @@ LIMIT (int)
 **查询显示函数，最后加LIMIT 行数**
 
 ---
-
-**order by排序**
 
 #### 函数  
 > ##### 字符串函数  
