@@ -48,3 +48,6 @@ categories: hpxuan
 >>> //js的函数，可计算某个字符串  
 >>> eval('www.'+"你想去的参数名称");  
 >>}  
+
+async. 默认是true，即为异步方式，如果是false这个ajax请求为同步请求，success之后打印日志。  
+cache：true 如果当前请求有缓存的话，直接使用缓存。如果该属性设置为 false，则每次都会向服务器请求  
