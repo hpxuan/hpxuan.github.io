@@ -1,0 +1,77 @@
+---
+layout: post
+title:  "文件处理"
+date:   2018-12-11 14:00:00 +0200
+categories: hpxuan
+---
+
+#### 打开文件  
+1. $document_root = $_SERVER['DOCUMENT_ROOT']  
+1. 1. 表单变量简短名称，指向web服务器文档树的根  
+2. @fopen("$document_root/../orders/orders.txt",'w');
+2. 1. 根目录上级的orders文件夹下文件  
+2. 2. @ 抑制所有由该函数调用所产生的错误  
+3. fopen()第二个参数解释  
+3. 1. 只读 r：(文件头开始读);,r+：(文件头开始读写)  
+3. 2. 只写 w：(文件头开始写);,w+：(文件头开始读写)，有删除所有，没有则创建  
+3. 3. 谨慎写 x:(文件头开始写);,x+:(文件头开始读写)，有不打开返回false  
+3. 4. 追加 a:(尾部增加);,a+(尾部增加或者读)，没有则创建  
+3. 5. b:(二进制模式);,t:(文本模式)  
+4. feof()  
+4. 1. 唯一参数是文件指针，指向文件末尾返回true  
+
+#### 写文件  
+1. fwrite()或者fputs()  
+1. 1. fputs()是fwrite()的别名函数  
+2. 2. fwrite($tp,$variable[,int lenght])  
+2. 3. 把$variable存入$tp的地址中[(写入最大字符数lenght)]  
+
+#### 读取文件  
+1. ## 每次读取一行  
+1. 1. fgets($tp)  
+1. 2. 不断地读入数据，直至读到一个换行符\n或者结束EOF  
+1. 3. fgetss($tp)  
+1. 4. 和上函数相似；可以过滤字符串中包含的PHP和HTML标记  
+1. 5. fgetcsv($tp,0,"\t")  
+1. 6. 0 表示不限制行长度，可设置行长度（应该比要读的文件中最长数据行的字符数大）  
+2. ## 读取整个文件  
+2. 1. readfile("$document_root/../orders/orders.txt")  
+2. 2. 调用地址文件，输出到游览器，关闭  
+2. 3. fpassthru($tp);  
+2. 4. 次函数需要fopen函数打开位置，输出到游览器，关闭(操作成功返回true,否则反之)  
+2. 5. $filearray=file("$document_root/../orders/orders.txt")  
+2. 6. 文件读入到$filearray数组，每行为一个元素  
+2. 7. file_get_contents()  
+2. 8. 与readfile()相同，不同之处是以字符串的形式返回文件内容，而不是打印到游览器  
+3. ## 读取一个字符  
+3. 1. 一次读取一个字符。用htnl换行<br/> 替换文本中\n。缺点是返回EOF  
+4. ## 读取任意长度  
+4. 1. fread(resource $tp,int lenght)  
+
+#### 关闭文件  
+1. fclose($tp) 成功关闭返回true  
+
+#### 文件锁定  
+1. flock($tp,LOCK_EX[,int ]) 函数为锁定操作函数  
+2. 锁定成功返回true，否则反之
+2. 1. 第二个参数  
+2. 2. LOCK_SH 读操作锁定(可共享，其他人可读)  
+2. 3. LOCK_EX 写操作锁定(互斥的，不共享)  
+2. 4. LOCK_UN 释放所有锁定  
+2. 5. LOCK_NB 纺织请求加锁发生堵塞(windows不支持)  
+
+#### 其他文件函数  
+1. file_exists()  
+1. 1. 不打开文件的前提下，查看文件是否存在  
+2. filesize()  
+2. 1. 确定文件大小  
+3. unlink()  
+3. 1. 删除地址文件，无法删除返回false  
+4. rewind()、fseek()、ftell()  
+4. 1. 文件中定位函数  
+4. 2. rewind($tp)函数将指针复位到文件的开始  
+4. 3. ftell($tp)函数可以以字节为单位报告文件指针当前在文件中的位置  
+4. 4. fseek($tp,int offset[,int whenen])  
+4. 5. 将文件指针从whence位置移动offset个字节  
+4. 6. whenen可选(默认值为SEEK_SET(表示文件开始处))  
+4. 7. 该参数的其他可能值为 SEEK_CUR(表示文件指针当前位置)； SEEK_END(表示文件结束位置)
