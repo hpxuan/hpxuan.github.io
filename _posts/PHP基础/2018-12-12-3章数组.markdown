@@ -5,17 +5,17 @@ date:   2018-12-11 14:00:00 +0200
 categories: hpxuan
 ---
 
-###### range(1(a),2(b)[,int])  
+##### range(1(a),2(b)[,int])  
 1. 创建从a到b步幅为int的升序数组  
 
-###### echo(array $ary)  
+##### echo(array $ary)  
 1. 返回数组当前元素，并将下一个元素作为当前元素  
 
-###### list(array $ary)  
+##### list(array $ary)  
 1. 将数组分解为一系列的值  
 
-###### sort(array $ary [, SORT_REGULAR])  
-###### rsort(array $ary [, SORT_REGULAR])  
+##### sort(array $ary [, SORT_REGULAR])  
+##### rsort(array $ary [, SORT_REGULAR])  
 1. sort() 按照升序排序,区分大小写,大写字母在小写字母前面  
 2. ksort() 是sort()的反向排序  
 3. 第二可选参数包括  
@@ -25,18 +25,18 @@ categories: hpxuan
 7. SORT_LOCALE_STRING  
 7. 1. 根据当前系统locale按字符串形式对数组进行排序  
 8. SORT_NATURAL  
-8. 1. 自然排序，使用 ###### natsort() 也可以获得相应效果  
+8. 1. 自然排序，使用 ##### natsort() 也可以获得相应效果  
 8. 2. 排序结果更符合人的直观感觉  
 9. SORT_FLAG_CASE  
 
-###### asort(),ksort()  
-###### rasort(),rksort()  
+##### asort(),ksort()  
+##### rasort(),rksort()  
 1. asort() 根据数组的值排升序  
 2. rasort() 是asort()的反向排序    
 3. ksort() 根据数组的关键字排升序  
 4. rksort() 是ksort()的反向排序  
 
-###### usort(array $ary,'compare')  
+##### usort(array $ary,'compare')  
 1. function compare($x,$y) {  
 1. 1. if ($x[1]==$y[1]) {  
 1. 2. return 0;  
@@ -45,52 +45,52 @@ categories: hpxuan
 1. 5. }else {return 1;}    
 2. }  
 3. 自定义排序函数，函数function必须比较$x和$y  
-###### asort(),ksort() 对应版本为 uasort(),uksort()  
-###### 自定义排序的反序，改变函数返回值即可  
+##### asort(),ksort() 对应版本为 uasort(),uksort()  
+##### 自定义排序的反序，改变函数返回值即可  
 
-###### array_multisort(array $ary  
-###### [,mixed aoder = SORT_ASC  
-###### [,mixed sorttype = SORT_REGULAR  
-###### [,mixed $...]]])  
+##### array_multisort(array $ary  
+##### [,mixed aoder = SORT_ASC  
+##### [,mixed sorttype = SORT_REGULAR  
+##### [,mixed $...]]])  
 1. 排序多维数组或一次排序多个数组  
 1. 1. 排序顺序可以用SORT_ASC或SORT_DESC指定升序或降序  
 1. 1. 排序类型支持和SORT()函数相同设置  
 2. 注意：关键字是字符串，函数维护键值关联。数字不维护  
 
-###### shuffle()  
+##### shuffle()  
 1. 将数组随机排序  
 
-###### array_reverse()  
+##### array_reverse()  
 1. 给出一个按原来数组顺序的反向排序  
 
-###### array_push()  
+##### array_push()  
 1. 将元素添加到数组末尾  
 
-###### array_pop()  
+##### array_pop()  
 1. 用来删除并返回数组最后一个元素  
 
-###### each() 和 next()  
+##### each() 和 next()  
 1. 使指针指向下一个元素  
 2. each() 将会指针前移一个位置之前返回当前元素  
 3. next() 将指针前移，再返回新的当前元素  
 
-###### reset() 和 end()  
+##### reset() 和 end()  
 1. reset() 将当前元素设置为数组的开始，返回第一个元素  
 2. end() 将指针移末尾，返回最后一个元素  
 
-###### end() 和 prev()  
+##### end() 和 prev()  
 1. 将当前指针回移一个位置，再返回新的当前元素  
 
-###### array_walk(array $ary ,callable func [,mixed userdate])  
+##### array_walk(array $ary ,callable func [,mixed userdate])  
 1. 对数组每一个应用函数，第三个可选参数为传递给自定义函数的参数  
 
-###### count(),sizeof()  
+##### count(),sizeof()  
 1. 对数组中的元素个数进行计算，sizeof()是count()的别名函数  
 
-###### array_count_values()  
+##### array_count_values()  
 1. 统计每个特定值在函数中出现的次数  
 
-###### extract(array $ary [,int extract_type] [,string prefix])  
+##### extract(array $ary [,int extract_type] [,string prefix])  
 1. 通过一个数组创建一系列标量变量  
 2. 把数组的$key=>$value 变为一个名称为key的变量  
 3. extract_type 告诉函数如何处理冲突，可选参数有  
@@ -108,4 +108,4 @@ categories: hpxuan
  >> 只有在不带前缀的变量已经存在的情况下创建带有前缀的变量  
 3. 8. EXTR_REFS 以引用方式提取变量  
 
-###### 更多数组函数（http://www.php.net/array）
+##### 更多数组函数（http://www.php.net/array）
