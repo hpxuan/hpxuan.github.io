@@ -27,14 +27,14 @@ categories: hpxuan
 2. 3. 把$variable存入$tp的地址中[(写入最大字符数lenght)]  
 
 #### 读取文件  
-1. ## 每次读取一行  
+1. ##### 每次读取一行  
 1. 1. fgets($tp)  
 1. 2. 不断地读入数据，直至读到一个换行符\n或者结束EOF  
 1. 3. fgetss($tp)  
 1. 4. 和上函数相似；可以过滤字符串中包含的PHP和HTML标记  
 1. 5. fgetcsv($tp,0,"\t")  
 1. 6. 0 表示不限制行长度，可设置行长度（应该比要读的文件中最长数据行的字符数大）  
-2. ## 读取整个文件  
+2. ##### 读取整个文件  
 2. 1. readfile("$document_root/../orders/orders.txt")  
 2. 2. 调用地址文件，输出到游览器，关闭  
 2. 3. fpassthru($tp);  
@@ -43,9 +43,9 @@ categories: hpxuan
 2. 6. 文件读入到$filearray数组，每行为一个元素  
 2. 7. file_get_contents()  
 2. 8. 与readfile()相同，不同之处是以字符串的形式返回文件内容，而不是打印到游览器  
-3. ## 读取一个字符  
+3. ##### 读取一个字符  
 3. 1. 一次读取一个字符。用htnl换行<br/> 替换文本中\n。缺点是返回EOF  
-4. ## 读取任意长度  
+4. ##### 读取任意长度  
 4. 1. fread(resource $tp,int lenght)  
 
 #### 关闭文件  
